@@ -1,0 +1,15 @@
+{
+    "sumar.cpp" : {
+        "filename": "sumar.cpp",
+        "salida_esperada": "10",
+        "salida_obtenida": "",
+        "puntuacion": 0
+    },
+    "multiplicar.cpp" : {
+        "filename": "multiplicar.cpp",
+        "inputs": ["2", "2", "3", "4", "5"],
+        "salida_esperada": "240",
+        "salida_obtenida": "",
+        "puntuacion": 0
+    }
+}

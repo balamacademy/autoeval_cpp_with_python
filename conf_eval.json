@@ -1,15 +1,37 @@
 {
     "sumar.cpp" : {
         "filename": "sumar.cpp",
-        "salida_esperada": "10",
-        "salida_obtenida": "",
-        "puntuacion": 0
+        "tests": [
+            {
+                "expected_output": "10",
+                "obtained_output": "",
+                "score": 0
+            }
+        ]
     },
     "multiplicar.cpp" : {
         "filename": "multiplicar.cpp",
-        "inputs": ["2", "2", "3", "4", "5"],
-        "salida_esperada": "240",
-        "salida_obtenida": "",
-        "puntuacion": 0
+        "tests": [
+            {
+                "inputs": ["2", "2", "3", "4", "5"],
+                "expected_output": "240",
+                "obtained_output": ""
+            }
+        ],
+        "score": 0
+    },
+    "quicksort.cpp" : {
+        "filename": "quicksort.cpp",
+        "tests": [
+            {
+                "expected_output": "11 12 22 25 34 64 90 ",
+                "obtained_output": ""
+            },
+            {
+                "expected_output": "11 12 22 25 34 64 0 ",
+                "obtained_output": ""
+            }
+        ],
+        "score": 0
     }
 }

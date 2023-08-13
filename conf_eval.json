@@ -33,5 +33,21 @@
             }
         ],
         "score": 0
+    },
+    "tunombrees.cpp" : {
+        "filename": "tunombrees.cpp",
+        "tests": [
+            {
+                "inputs": ["Mario"],
+                "expected_output": "Dime tu nombre\nTu nombre es: Mario\n",
+                "obtained_output": ""
+            },
+            {
+                "inputs": ["Jua"],
+                "expected_output": "Dime tu nombre\nTu nombre es: Juan\n",
+                "obtained_output": ""
+            }
+        ],
+        "score": 0
     }
 }

@@ -45,17 +45,21 @@ if __name__ == "__main__":
     puntuacion = 0
     n_ejercicios = 0
     for k in exercises:
-        exercise = exercises[k]        
-        print(k)
+        exercise = exercises[k]
         n_ejercicios += 1
         n_test = 0
         puntuacion_test = 0
+        print("######### Ejercicio: ", k, " #########")
         for test in exercise['tests']:            
-            print(test['obtained_output'], test['expected_output'], test['obtained_output'] == test['expected_output'])
+            print("### Salida esperada: ")
+            print(test['expected_output'])
+            print("### Salida obtenida: ")
+            print(test['obtained_output'])
+            print("--- Son iguales?", test['obtained_output'] == test['expected_output'])
             puntuacion_test += 1 if test['obtained_output'] == test['expected_output'] else 0
             n_test += 1 
+        print("Errores: ", exercise.get('obtained_output', ''))
         exercise['score'] = puntuacion_test/n_test
         puntuacion += exercise['score']
 
-    print(exercises)
     print(f'{puntuacion}/{n_ejercicios} = {puntuacion/n_ejercicios*100}')
